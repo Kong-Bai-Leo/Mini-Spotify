@@ -18,7 +18,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:defaultNavHost="true" />
-
+        <androidx.compose.ui.platform.ComposeView
+            android:id="@+id/player_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom" />
     </FrameLayout>
 
     <View
@@ -34,5 +38,6 @@
         app:itemIconTint="@color/bottom_nav_color"
         app:itemTextColor="@color/bottom_nav_color"
         app:menu="@menu/bottom_nav_menu" />
+
 
 </LinearLayout>
